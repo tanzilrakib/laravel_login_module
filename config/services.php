@@ -45,7 +45,7 @@ return [
     'facebook' => [
         'client_id' => '128805704456189',
         'client_secret' => 'f621343de20b68e611fc97f593b44538',
-        'redirect' => 'http://localhost:8000/login/facebook/callback',
+        'redirect' => 'https://immense-headland-50476.herokuapp.com/login/facebook/callback',
     ],
 
 ];
