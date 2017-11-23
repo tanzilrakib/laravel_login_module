@@ -127,16 +127,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
-
+    
     <script>
 
       // initialize Account Kit with CSRF protection
       AccountKit_OnInteractive = function(){
         AccountKit.init(
           {
-            appId:"128805704456189", 
+            appId:"{{env('ACCOUNTKIT_APP_ID')}}", 
             state:"{{csrf_token()}}", 
-            version:"v1.1",
+            version:"{{env('ACCOUNT_KIT_API_VERSION')}}",
             // fbAppEventsEnabled:true,
             debug:true 
           }
