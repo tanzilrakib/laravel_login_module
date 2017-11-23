@@ -76,5 +76,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    
+    <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
 </body>
 </html>
